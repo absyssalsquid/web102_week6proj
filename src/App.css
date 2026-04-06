@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
+
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  font-family: 'Geologica', sans-serif;
+}
+
+/* header */
+
+.header{
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.385);
+}
+
+.header img{
+  height: 50px;
+}
+
+/* inputs */
+
+.search-bar{
+  height:66px;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 0.4em 0.6em;
+  margin: 0.2em 0.5em;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 3px;
+}
+
+.date-input{
+  width: 6em;
+  text-align: center;
+}
+
+.date-input.invalid {
+  border: 1px solid red;
+  color: red;
+}
+
+.error-msg{
+  color: red;
+  font-size: 0.8em;
+  margin: 0.2em 0;
+}
+
+select {
+  font-size: 1.2em;
+  padding: 0.4em 0.6em;
+  margin: 0.2em 0.5em;
+  background-color: white;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 3px;
+}
+option {
+  font-size: 0.8em;
+}
+
+/* cards */
+.card-container{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  gap: 1%;
+  margin: 2em 1em;
+}
+.card{
+  border-radius: 5px;
+  border: 1px rgb(201, 201, 201) solid;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.385);
+  padding: 1em 0;
+  flex-grow: 1;
+  flex-basis: 0
+}
+.card-data{
+  font-size: 2em;
+}
+
+/* table data */
+.table-container{
+  margin: 1em;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #444444;
+}
+
+thead {
+  background-color: rgb(230, 0, 18);
+  color: white;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+}
+
+th, td {
+  padding: 0.4em;
+}
+
+td img{max-height: 5em;}
+.image-col{width: 130px;}
+.date-col{
+  font-size: 0.8em;
+  width: 85px;
+}
+td.date-col{
+  opacity: 0.8;
+}
+
+
+
